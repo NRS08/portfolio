@@ -1,0 +1,12 @@
+.footer {
+  background: black;
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer p {
+  color: white;
+  font-family: sans-serif;
+}

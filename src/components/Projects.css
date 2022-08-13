@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Poppins&display=swap");
+
+.projects-container {
+  background: black;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-height: 100vh;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heading {
+  margin-top: 3rem;
+  font-size: 40px;
+  color: #e1d6c3;
+  /* margin-left: 1.5rem; */
+  font-weight: 600;
+}
+.projects {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  gap: 1rem;
+}
+.projects a {
+  cursor: pointer;
+  text-decoration: none;
+}
+.project h2 {
+  color: #e1d6c3;
+}
+.project {
+  border: 2px solid white;
+  width: 80vw;
+  padding: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+  color: white;
+  margin-bottom: 1rem;
+  transition: all 300ms ease-in-out;
+}
+.sm {
+  display: flex;
+  flex-direction: column;
+}
+.head {
+  font-weight: 600;
+}
+.proj-img img {
+  height: 100%;
+
+  width: 100%;
+  object-fit: fill;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 600px) {
+  .project {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .width1 {
+    width: 80vw;
+  }
+  .width2 {
+    width: 37vw;
+    flex: 1 1 0px;
+  }
+  .sm {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+  }
+}
+
+.project:hover {
+  transform: scale(1.05);
+}

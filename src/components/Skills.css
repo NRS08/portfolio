@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Poppins&display=swap");
+.skill-container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: black;
+  min-height: 100vh;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heading {
+  font-size: 40px;
+  color: #e1d6c3;
+  /* margin-left: 1.5rem; */
+  font-weight: 600;
+}
+.skill {
+  color: white;
+  padding: 1.5rem;
+  padding-top: 0;
+  text-align: center;
+}
+.skillImg {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.img {
+  display: flex;
+  gap: 0.5em;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 300ms ease-in-out;
+}
+.name {
+  font-size: medium;
+  color: white;
+  font-weight: 400;
+  opacity: 0;
+}
+img {
+  height: 50px;
+  width: 50px;
+}
+.img:hover {
+  scale: 1.1;
+}
+.img:hover .name {
+  opacity: 1;
+}
+.combine {
+  display: flex;
+  flex-direction: column;
+}
+.fade-in {
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+}
+.fade-in.appear {
+  opacity: 1;
+}
+
+@media screen and (min-width: 600px) {
+  img {
+    height: 80px;
+    width: 80px;
+  }
+  .skillImg {
+    gap: 2rem;
+  }
+  .combine {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+}

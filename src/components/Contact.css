@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Poppins&display=swap");
+.contact-container {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: black;
+  min-height: 70vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  text-align: center;
+}
+.contact h1 {
+  color: #e1d6c3;
+}
+.contact p {
+  font-size: large;
+}
+.btn a {
+  text-decoration: none;
+  color: black;
+}
+.btn:hover {
+  background-color: transparent;
+  border: 1px solid #e1d6c3;
+  color: white;
+}
+.btn:hover a {
+  color: white;
+}
+.links {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.links a {
+  color: white;
+}
+
+@media screen and (min-width: 600px) {
+  .contact-container {
+    height: 100vh;
+  }
+  .contact {
+    width: 30%;
+  }
+  .contact h1 {
+    font-weight: 900;
+    font-size: 40px;
+  }
+}

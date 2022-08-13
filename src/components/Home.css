@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Poppins&display=swap");
+.container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: black;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  width: 85%;
+  animation-name: onLoad;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+.home-name {
+  color: #e1d6c3;
+  font-weight: 900;
+  font-size: 50px;
+  text-align: center;
+}
+.clg {
+  font-weight: 900;
+}
+.text {
+  color: white;
+  text-align: center;
+}
+.button {
+  margin-top: 1rem;
+}
+
+.btn {
+  line-height: 50px;
+  font-family: "Poppins", sans-serif;
+  height: 50px;
+  text-align: center;
+  width: 200px;
+  cursor: pointer;
+  border: 0;
+  background-color: #e1d6c3;
+  font-size: large;
+  font-weight: 600;
+  transition: all 300ms ease-in-out;
+  border-radius: 0.5rem;
+}
+
+.btn:hover {
+  background-color: transparent;
+  border: 1px solid #e1d6c3;
+  color: white;
+}
+@media screen and (min-width: 600px) {
+  .content {
+    width: 65%;
+    align-items: flex-start;
+  }
+  .home-name {
+    font-size: 75px;
+  }
+  .text {
+    text-align: left;
+    font-size: x-large;
+  }
+}
+@keyframes onLoad {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
