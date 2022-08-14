@@ -6,7 +6,10 @@ import "./Home.css";
 import { useGlobalContext } from "../context";
 
 const Home = () => {
-  const { homeRef } = useGlobalContext();
+  const { homeRef, contactRef } = useGlobalContext();
+  const click = () => {
+    contactRef.current.scrollIntoView(true);
+  };
 
   return (
     <>
@@ -24,7 +27,9 @@ const Home = () => {
             Technologies and build something new.
           </div>
           <div className="button">
-            <button className="btn">Get In Touch</button>
+            <button className="btn" onClick={click}>
+              Get In Touch
+            </button>
           </div>
         </div>
       </div>
