@@ -48,6 +48,7 @@
   cursor: pointer;
   border: 0;
   background-color: #e1d6c3;
+  color: black;
   font-size: large;
   font-weight: 600;
   transition: all 300ms ease-in-out;
