@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useGlobalContext } from "../context";
 import "./Skills.css";
+import Heroku from "./images/heroku.png";
 
 const Skills = () => {
   const { skillRef } = useGlobalContext();
@@ -71,7 +72,7 @@ const Skills = () => {
     {
       id: 1,
       name: "Heroku",
-      img: "https://assets.stickpng.com/images/58480873cef1014c0b5e48ea.png",
+      img: "https://www.liblogo.com/img-logo/max/he246h2f2-heroku-logo-heroku-logo-transparent-png-stickpng.png",
     },
     {
       id: 2,

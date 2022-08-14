@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee, faBars } from "@fortawesome/free-solid-svg-icons";
+import { faClose, faBars } from "@fortawesome/free-solid-svg-icons";
+import CloseIcon from "@mui/icons-material/Close";
 import { useGlobalContext } from "../context";
 
 const Navbar = () => {
@@ -27,6 +28,7 @@ const Navbar = () => {
     }
   });
   const click = (title) => {
+    mobNav();
     if (title === "home") {
       homeRef.current.scrollIntoView(true);
     } else if (title === "skill") {
@@ -40,8 +42,8 @@ const Navbar = () => {
   return (
     <div class="header">
       <div class="logo">{string}</div>
-      <div class="menu-btn" onClick={mobNav}>
-        <FontAwesomeIcon color="white" icon={faBars} />
+      <div class="menu-btn">
+        <FontAwesomeIcon onClick={mobNav} color="white" icon={faBars} />
       </div>
       <nav className="nav">
         <ul>
@@ -58,7 +60,12 @@ const Navbar = () => {
             <button onClick={() => click("contact")}>Contact</button>
           </li>
           <li>
-            <button onClick={() => click("resume")}>Resume</button>
+            <a
+              href="https://drive.google.com/file/d/1WX004j1VV-YEvkd3UWqzEZVUdsXqV_l2/view?usp=sharing"
+              target="_blank"
+            >
+              Resume
+            </a>
           </li>
         </ul>
       </nav>

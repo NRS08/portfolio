@@ -51,13 +51,13 @@ nav li {
 nav ul {
   margin-top: 4rem;
 }
-/* nav li a {
+nav li a {
   text-decoration: none;
   color: #e1d6c3;
   font-weight: 700;
   letter-spacing: 1px;
   font-size: x-large;
-} */
+}
 nav li button {
   border: 0;
   padding: 0;
@@ -91,10 +91,10 @@ nav li button {
     gap: 3rem;
     margin-top: 0;
   }
-  /* .nav li a {
+  .nav li a {
     font-weight: 400;
     font-size: large;
-  } */
+  }
   nav li button {
     font-weight: 400;
     font-size: large;
