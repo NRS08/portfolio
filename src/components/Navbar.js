@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClose, faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 import CloseIcon from "@mui/icons-material/Close";
 import { useGlobalContext } from "../context";
 
@@ -9,6 +9,15 @@ const Navbar = () => {
   const { homeRef, skillRef, projectRef, contactRef } = useGlobalContext();
   const [string, setString] = useState("Hello There!");
   const [isOpen, setIsopen] = useState(false);
+  useEffect(() => {
+    if (isOpen) {
+      const nav = document.querySelector(".nav");
+      nav.classList.add("show");
+    } else {
+      const nav = document.querySelector(".nav");
+      nav.classList.remove("show");
+    }
+  }, [isOpen]);
 
   const mobNav = () => {
     setIsopen(!isOpen);
@@ -40,10 +49,14 @@ const Navbar = () => {
     }
   };
   return (
-    <div class="header">
-      <div class="logo">{string}</div>
-      <div class="menu-btn">
-        <FontAwesomeIcon onClick={mobNav} color="white" icon={faBars} />
+    <div className="header">
+      <div className="logo">{string}</div>
+      <div className="menu-btn" onClick={() => setIsopen(!isOpen)}>
+        {isOpen ? (
+          <FontAwesomeIcon color="white" icon={faClose} />
+        ) : (
+          <FontAwesomeIcon color="white" icon={faBars} />
+        )}
       </div>
       <nav className="nav">
         <ul>
