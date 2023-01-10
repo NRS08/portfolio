@@ -27,7 +27,7 @@ const Projects = () => {
         </a>
         <div className="sm">
           <a
-            href="https://jobs-api-08-06-02.herokuapp.com/api-docs/"
+            href="https://cod-pleat.cyclic.app/api-docs/"
             target="_blank"
           >
             <div className="project width2">
