@@ -65,22 +65,30 @@
 }
 
 @media screen and (min-width: 600px) {
+  .projects{
+    position: relative;
+    /* background-color: red; */
+  }
   .project {
     flex-direction: row;
+    /* height: 100%; */
+    flex: 1;
     gap: 2rem;
   }
   .width1 {
     width: 80vw;
   }
-  .width2 {
-    width: 37vw;
-    flex: 1 1 0px;
-  }
   .sm {
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     gap: 5vw;
+  }
+  .width2 {
+    width: 37vw;
+    flex: 1;
+    min-height: 100%;
+    /* height: 35vh; */
   }
 }
 
