@@ -8,6 +8,7 @@
   background: black;
   min-height: 70vh;
   width: 100vw;
+  max-width:100%;
   display: flex;
   justify-content: center;
   align-items: center;

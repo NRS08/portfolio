@@ -10,10 +10,14 @@ const Projects = () => {
     <div ref={projectRef} className="projects-container">
       <div className="heading">My Projects</div>
       <div className="projects">
-        <a href="https://sneakpeak-store.vercel.app/" target="_blank">
+        <a
+          href="https://sneakpeak-store.vercel.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <div className="project width1">
             <div className="proj-img">
-              <img src={SneakPeak}></img>
+              <img src={SneakPeak} alt="Sneakpeak"></img>
             </div>
             <div className="proj-desc">
               <h2>SneakPeak Store</h2>
@@ -29,6 +33,7 @@ const Projects = () => {
           <a
             href="https://cod-pleat.cyclic.app/api-docs/"
             target="_blank"
+            rel="noreferrer"
           >
             <div className="project width2">
               <div className="proj-desc">
@@ -44,6 +49,7 @@ const Projects = () => {
           <a
             href="https://nrs08.github.io/trendles-eventspage/"
             target="_blank"
+            rel="noreferrer"
           >
             <div className="project width2">
               <div className="proj-desc">

@@ -5,7 +5,9 @@
   box-sizing: border-box;
   background: black;
   min-height: 100vh;
+  min-height: 100dvh;
   width: 100vw;
+  max-width:100%;
   font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
