@@ -74,7 +74,7 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              href="https://drive.google.com/file/d/1WX004j1VV-YEvkd3UWqzEZVUdsXqV_l2/view?usp=sharing"
+              href="https://drive.google.com/file/d/1VpWktAiXCixsFwwfPJ1jL4QR3suJVCPS/view?usp=sharing"
               target="_blank"
             >
               Resume
